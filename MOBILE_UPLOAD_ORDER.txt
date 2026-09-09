@@ -1,0 +1,30 @@
+手机 GitHub 网页上传清单
+
+第1批：仓库根目录
+.gitignore
+build.gradle.kts
+gradle.properties
+settings.gradle.kts
+README.md
+
+第2批：进入 app/ 后上传
+app/build.gradle.kts
+app/libs/README.txt
+
+第3批：进入 app/src/main/ 后上传
+AndroidManifest.xml
+java/com/example/sensevoicesubtitle/MainActivity.kt
+java/com/example/sensevoicesubtitle/data/Models.kt
+java/com/example/sensevoicesubtitle/engine/ModelValidator.kt
+java/com/example/sensevoicesubtitle/engine/SenseVoiceEngine.kt
+java/com/example/sensevoicesubtitle/engine/SherpaSenseVoiceEngine.kt
+java/com/example/sensevoicesubtitle/ui/MainViewModel.kt
+java/com/example/sensevoicesubtitle/util/AudioChunker.kt
+java/com/example/sensevoicesubtitle/util/SrtWriter.kt
+res/values/strings.xml
+res/values/themes.xml
+
+第4批：进入 .github/workflows/ 后上传
+build-apk.yml
+
+完成后：Actions → Build Android APK → Run workflow。

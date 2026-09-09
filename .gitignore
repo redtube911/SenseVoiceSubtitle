@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+/build/
+**/build/
+app/libs/*.aar
+app/src/main/assets/sensevoice/*.onnx
+app/src/main/assets/sensevoice/tokens.txt
+.DS_Store
+*.iml
