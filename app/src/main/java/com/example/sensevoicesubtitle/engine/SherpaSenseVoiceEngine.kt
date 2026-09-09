@@ -52,7 +52,7 @@ class SherpaSenseVoiceEngine(context: Context) : SenseVoiceEngine {
                 val samples = reader.readSamples((wanted * reader.sampleRate / 1000L).toInt())
                 if (samples.isEmpty()) break
                 val stream = rec.createStream()
-                stream.acceptWaveform(reader.sampleRate, samples)
+                stream.acceptWaveform(samples, sampleRate = reader.sampleRate)
                 rec.decode(stream)
                 val r = rec.getResult(stream)
                 val text = r.text.trim()
